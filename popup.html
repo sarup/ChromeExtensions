@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Screenshot Editor</title>
+  <style>
+    body { font-family: Arial, sans-serif; width: 350px; }
+    #canvas { border: 1px solid #ccc; margin-top: 10px; cursor: crosshair; }
+    #controls { margin-top: 10px; }
+    button { margin-right: 5px; }
+  </style>
+</head>
+<body>
+  <button id="captureBtn">Capture Screenshot</button>
+  <div id="controls" style="display:none;">
+    <button id="saveBtn">Save</button>
+    <button id="clearBtn">Clear</button>
+    <label>Color: <input type="color" id="colorPicker" value="#ff0000"></label>
+    <label>Size: <input type="number" id="sizePicker" value="3" min="1" max="20" style="width:40px;"></label>
+  </div>
+  <canvas id="canvas" width="320" height="180" style="display:none;"></canvas>
+  <script src="popup.js"></script>
+</body>
+</html>
